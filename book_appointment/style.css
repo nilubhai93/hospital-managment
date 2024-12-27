@@ -1,0 +1,216 @@
+/* Reset and Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7; /* Light greyish-blue background for the page */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 3px solid #388E3C; /* Darker green bottom border */
+}
+
+/* Main Container Styling */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff; /* White background for the form container */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section Styling */
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f7f7f7; /* Very light gray background for the form section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.column {
+    width: 48%; /* Ensures the columns take up equal space */
+    background-color: #ffffff; /* White background inside columns for clarity */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.column h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Styling for Regular Labels */
+label {
+    display: block;
+    margin-bottom: 2px; /* Reduced margin between label and input */
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Special Styling for Child-Related Labels */
+label[for="name"],
+label[for="phone"] {
+    font-weight: bold;
+    color: #D32F2F; /* Red for emphasis */
+    font-size: 1.1rem;
+}
+
+label[for="email"] {
+    font-weight: normal;
+    color: #555;
+    font-size: 1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 6px; /* Reduced padding inside the inputs */
+    margin-top: 2px; /* Reduced margin between input fields */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    width: 100%;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+    background-color: #f7f7f7; /* Light gray background for the footer */
+    padding: 10px;
+    border-top: 1px solid #ddd; /* Subtle border at the top */
+}
+
+.emergency-button {
+    position: fixed;
+    bottom: 160px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    background-color: #ff0000;
+    /* Red background */
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    /* Circular button */
+    text-align: center;
+    text-decoration: none;
+    /* Remove the underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    /* Ensure it's above other elements */
+    animation: blink 1.5s infinite;
+    /* Apply blink animation every 1.5 seconds */
+}
+
+/* Phone icon style */
+.emergency-button i {
+    font-size: 30px;
+    /* Size of the phone icon */
+}
+
+/* Hover effect: Darker red on hover */
+.emergency-button:hover {
+    background-color: #cc0000;
+    /* Darker red on hover */
+}
+
+/* Focus effect */
+.emergency-button:focus {
+    outline: 2px solid #ffcc00;
+    /* Yellow outline for focus */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
+
+/* Extra Small Screen Adjustments */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    label, input, select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
