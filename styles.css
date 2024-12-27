@@ -150,7 +150,8 @@ body {
 
 /* Anchor tag inside the service card - remove underline and reset color */
 .service-card {
-    text-decoration: none; /* Removes the underline from anchor tag */
+    text-decoration: none;
+    /* Removes the underline from anchor tag */
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -160,7 +161,8 @@ body {
     cursor: pointer;
     position: relative;
     list-style-type: none;
-    color: inherit; /* Ensures the link inherits text color from its parent */
+    color: inherit;
+    /* Ensures the link inherits text color from its parent */
 }
 
 /* Hover effect for the service card */
@@ -231,61 +233,89 @@ body {
 
 /* Emergency Section Styles */
 .emergency {
-    background-color: #e74c3c; /* Red background for urgency */
-    color: white; /* White text for contrast */
-    padding: 60px 20px; /* Adequate padding for spacing */
-    text-align: center; /* Center-align the text */
-    border-radius: 15px; /* Rounded corners for a modern look */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deep shadow for depth */
-    margin: 30px auto; /* Center the section horizontally with some margin */
-    max-width: 1200px; /* Max width to maintain readability */
-    cursor: pointer; /* Change cursor to indicate clickable */
-    animation: blinkEffect 1.5s infinite alternate; /* Apply blinking effect */
+    background-color: #e74c3c;
+    /* Red background for urgency */
+    color: white;
+    /* White text for contrast */
+    padding: 60px 20px;
+    /* Adequate padding for spacing */
+    text-align: center;
+    /* Center-align the text */
+    border-radius: 15px;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Deep shadow for depth */
+    margin: 30px auto;
+    /* Center the section horizontally with some margin */
+    max-width: 1200px;
+    /* Max width to maintain readability */
+    cursor: pointer;
+    /* Change cursor to indicate clickable */
+    animation: blinkEffect 1.5s infinite alternate;
+    /* Apply blinking effect */
 }
 
 /* Heading Styles */
 .emergency h2 {
-    font-size: 2.5em; /* Large heading for emphasis */
-    margin-bottom: 20px; /* Space below the heading */
-    font-weight: 700; /* Bold text */
-    letter-spacing: 2px; /* Slight letter spacing for a modern feel */
+    font-size: 2.5em;
+    /* Large heading for emphasis */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    font-weight: 700;
+    /* Bold text */
+    letter-spacing: 2px;
+    /* Slight letter spacing for a modern feel */
 }
 
 /* Paragraph Styles */
 .emergency p {
-    font-size: 1.3em; /* Slightly larger font for readability */
-    line-height: 1.6; /* Line height for better readability */
-    max-width: 800px; /* Limit width for easy reading */
-    margin-left: auto; /* Center-align text */
-    margin-right: auto; /* Center-align text */
-    margin-bottom: 30px; /* Add space below */
+    font-size: 1.3em;
+    /* Slightly larger font for readability */
+    line-height: 1.6;
+    /* Line height for better readability */
+    max-width: 800px;
+    /* Limit width for easy reading */
+    margin-left: auto;
+    /* Center-align text */
+    margin-right: auto;
+    /* Center-align text */
+    margin-bottom: 30px;
+    /* Add space below */
 }
 
 /* Blinking Effect Animation (High to Low Opacity) */
 @keyframes blinkEffect {
     0% {
-        opacity: 1; /* Fully visible */
+        opacity: 1;
+        /* Fully visible */
     }
+
     50% {
-        opacity: 0.8; /* Semi-visible (faded/light) */
+        opacity: 0.8;
+        /* Semi-visible (faded/light) */
     }
+
     100% {
-        opacity: 1; /* Fully visible again */
+        opacity: 1;
+        /* Fully visible again */
     }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .emergency {
-        padding: 50px 20px; /* Less padding on smaller screens */
+        padding: 50px 20px;
+        /* Less padding on smaller screens */
     }
 
     .emergency h2 {
-        font-size: 2em; /* Slightly smaller heading on smaller screens */
+        font-size: 2em;
+        /* Slightly smaller heading on smaller screens */
     }
 
     .emergency p {
-        font-size: 1.2em; /* Slightly smaller paragraph text */
+        font-size: 1.2em;
+        /* Slightly smaller paragraph text */
     }
 }
 
@@ -302,6 +332,7 @@ body {
 
 
 
+/* ******************************************************************************************************************** */
 
 
 .book-appointment {
@@ -331,42 +362,170 @@ body {
     transform: scale(1.1);
 }
 
-.order-medicine {
-    background-color: #ffe6e6;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 4px solid #cc0000;
+
+
+
+
+
+
+
+
+/* *************************************************************************************************************** */
+/* footer */
+
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.order-medicine h2 {
-    margin-bottom: 20px;
-}
-
-.order-medicine button {
-    padding: 10px 20px;
-    background-color: #cc0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.order-medicine button:hover {
-    background-color: #990000;
-    transform: scale(1.1);
-}
-
+/* Footer Styling */
 .footer {
-    background-color: #003366;
+    background: linear-gradient(45deg, #003366, #00559e);
     color: #fff;
-    padding: 20px;
+    padding: 20px 30px;  /* Reduced padding to decrease height */
     text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);  /* Reduced shadow */
+    border-top: 3px solid #00559e;
+}
+
+.footer h2 {
+    font-size: 1.6rem;  /* Reduced font size for heading */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;  /* Reduced letter spacing */
+}
+
+.footer p {
+    font-size: 1rem;  /* Reduced font size for text */
+    line-height: 1.4;  /* Slightly tighter line-height */
+    margin-bottom: 8px;  /* Reduced space between paragraphs */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00bcd4;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 10px;  /* Reduced top margin */
+}
+
+.social-icon {
+    margin: 0 12px;  /* Reduced margin between icons */
+    font-size: 2.5rem;  /* Reduced icon size */
+    color: #fff;  /* Default white color for all icons */
+    transition: transform 0.4s ease, color 0.4s ease, background 0.4s ease, box-shadow 0.4s ease, filter 0.3s ease;
+    padding: 12px;  /* Reduced padding */
+    border-radius: 50%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect */
+.social-icon:hover {
+    color: #fff;
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 25px 5px rgba(0, 188, 212, 0.7);
+    background-color: transparent;
+    border: 2px solid #00bcd4;
+    filter: brightness(1.2);
+}
+
+/* Specific Social Media Icon Colors */
+#facebook {
+    background-color: #3b5998; /* Facebook Blue */
+    border-color: #3b5998;  /* Facebook Blue */
+}
+
+#twitter {
+    background-color: #1da1f2; /* Twitter Blue */
+    border-color: #1da1f2;  /* Twitter Blue */
+}
+
+#instagram {
+    background-color: #e4405f; /* Instagram Pink */
+    border-color: #e4405f;  /* Instagram Pink */
+}
+
+/* Hover effects for specific colors */
+#facebook:hover {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    box-shadow: 0 0 25px 5px #3b5998; /* Facebook glow effect */
+}
+
+#twitter:hover {
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+    box-shadow: 0 0 25px 5px #1da1f2; /* Twitter glow effect */
+}
+
+#instagram:hover {
+    background-color: #e4405f;
+    border-color: #e4405f;
+    box-shadow: 0 0 25px 5px #e4405f; /* Instagram glow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 20px;  /* Further reduce padding for small screens */
+    }
+
+    .footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer p {
+        font-size: 0.95rem;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        margin: 0 8px;
+        font-size: 2rem;  /* Slightly smaller icons for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px 10px;  /* Further reduce padding on small mobile screens */
+    }
+
+    .footer h2 {
+        font-size: 1.4rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .social-icon {
+        font-size: 1.6rem;  /* Smaller icons for very small screens */
+    }
 }
 
 
+
+
+
+/* ******************************************************************************************** */
 .emergency-button {
     position: fixed;
     bottom: 160px;
@@ -409,10 +568,6 @@ body {
     /* Yellow outline for focus */
 }
 
-
-
-
-
 /* Blink animation: The button will change color every 1.5 seconds */
 @keyframes blink {
     0% {
@@ -430,14 +585,6 @@ body {
         /* Red again */
     }
 }
-
-
-
-
-
-
-
-
 
 
 /* Animations */
@@ -465,7 +612,7 @@ body {
 
 @keyframes pulse {
     0% {
-        background-color: #ff9999;
+        background-color: #00ff2f;
     }
 
     50% {
@@ -479,6 +626,11 @@ body {
 
 
 
+
+
+
+
+/* *************************************************************************************************************** */
 
 @media (max-width: 768px) {
 
